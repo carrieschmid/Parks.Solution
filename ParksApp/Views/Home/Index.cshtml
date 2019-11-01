@@ -1,0 +1,12 @@
+@using ParksApp.Models
+
+
+<h1>All Parks</h1>
+<ul>
+@foreach (Park park in Model)
+{
+    <li>Name: @park.Name</li>
+    <li>State: @park.State</li>
+    <li>Miles: @park.Miles</li>
+ }
+</ul>
